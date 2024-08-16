@@ -99,7 +99,8 @@ st.markdown("""
 st.markdown('<h1 class="title"><i class="fas fa-leaf"></i> MED PLANT SNAP</h1>', unsafe_allow_html=True)
 st.write('Many of us don’t know about the medical plants and their uses in curing a disease. Upload a snap of a plant leaf to know about the plant and their medical uses.')
 
-# File uploader
+# File uploader with warning message
+st.markdown('<p style="color: red; font-weight: bold;">Warning: Please upload a clear image of a plant leaf. Uploading other types of images may result in incorrect predictions, showing the highest probability class.</p>', unsafe_allow_html=True)
 uploaded_file = st.file_uploader("Upload your leaf snap...", type="jpg")
 
 if uploaded_file is not None:
@@ -159,5 +160,4 @@ st.sidebar.markdown("""
 <a href="https://www.linkedin.com/in/bilal1729/" target="_blank" style="color: #ECF0F1; text-decoration: none;">
     <i class="fab fa-linkedin social-icon"></i> LinkedIn
 </a>
-
 """, unsafe_allow_html=True)
