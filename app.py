@@ -26,7 +26,7 @@ class_names = ["Arive-Dantu", "Basale", "Betel", "Crape_Jasmine", "Curry", "Drum
 
 # Function to preprocess the image
 def preprocess_image(image):
-    image = ImageOps.fit(image, (150, 150), Image.ANTIALIAS)
+    image = ImageOps.fit(image, (150, 150), Image.Resampling.LANCZOS)
     image_array = np.asarray(image)
     normalized_image_array = (image_array.astype(np.float32) / 127.0) - 1
     return np.expand_dims(normalized_image_array, axis=0)
