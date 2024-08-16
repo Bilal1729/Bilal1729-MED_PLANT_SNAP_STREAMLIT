@@ -7,8 +7,6 @@ Med Plant Snap is a Streamlit web application designed to help users identify me
 - [Installation](#installation)
 - [Usage](#usage)
 - [Customization](#customization)
-- [Acknowledgements](#acknowledgements)
-- [License](#license)
 
 ## Features
 - **Upload Leaf Image:** Users can upload an image of a leaf to identify the medicinal plant.
@@ -60,11 +58,3 @@ The app uses a CSV file (`details.csv`) containing plant information. You can mo
 
 ### Model and Image Preprocessing
 The model is loaded from the `MED_PLANT_SNAP(16.08.2024).h5` file, and image preprocessing is done using the PIL library. You can replace the model with a custom one by updating the model path and adjusting the preprocessing steps if necessary.
-
-## Acknowledgements
-- **Streamlit:** For providing an easy-to-use framework for creating web applications.
-- **TensorFlow:** For the powerful deep learning framework used to train the model.
-- **Pandas:** For handling CSV data with ease.
-
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
