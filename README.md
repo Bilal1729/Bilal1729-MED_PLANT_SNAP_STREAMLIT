@@ -2,6 +2,8 @@
 
 Med Plant Snap is a Streamlit web application designed to help users identify medicinal plants from leaf images. By uploading a leaf image, users can learn about the plant's scientific name, diseases it treats, preparation methods, and administration details. The app leverages a pre-trained TensorFlow model for plant classification and provides an easy-to-use interface with custom styling.
 
+![Med Plant Snap](demo.png)
+
 ## Table of Contents
 - [Features](#features)
 - [Installation](#installation)
