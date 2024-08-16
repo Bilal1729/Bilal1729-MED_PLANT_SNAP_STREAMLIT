@@ -11,18 +11,8 @@ import base64
 st.set_page_config(page_title="Med Plant Snap", page_icon="leaf.png", layout="centered")
 
 # Ensure your model and CSV files are in the correct directory
-model_path = 'MED_PLANT_SNAP(19.03.2023).h5'
+model_path = 'MED_PLANT_SNAP(16.08.2024).h5'
 csv_path = 'details.csv'
-
-# Check if files exist
-if not os.path.exists(model_path):
-    st.error("Model file not found. Please upload the model file.")
-    st.stop()
-
-if not os.path.exists(csv_path):
-    st.error("CSV file not found. Please upload the CSV file.")
-    st.stop()
-
 # Load the pre-trained model
 model = tf.keras.models.load_model(model_path)
 
